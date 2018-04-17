@@ -1,0 +1,19 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@2.15.12
+3 info using node@v0.10.29
+4 verbose node symlink /usr/bin/node
+5 verbose config Skipping project config: /home/pi/.npmrc. (matches userconfig)
+6 verbose stack Error: ENOENT, open '/home/pi/package.json'
+7 verbose cwd /home/pi/Music
+8 error Linux 4.9.35-v7+
+9 error argv "node" "/usr/local/bin/npm" "start"
+10 error node v0.10.29
+11 error npm  v2.15.12
+12 error path /home/pi/package.json
+13 error code ENOENT
+14 error errno 34
+15 error enoent ENOENT, open '/home/pi/package.json'
+15 error enoent This is most likely not a problem with npm itself
+15 error enoent and is related to npm not being able to find a file.
+16 verbose exit [ 34, true ]

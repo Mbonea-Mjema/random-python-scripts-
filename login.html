@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title> Status</title>
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<style type='text/css'>
+  div.loading-invisible {
+  display:none;
+  }
+
+  div.loading-visible{
+    display:block;
+    position:absolute;
+    top:200px;
+    left:0;
+    width:100%;
+    text-align:center;
+    background:#fff;
+    filter: alpha(opacity=75);
+    -khtml-opacity: 0.75;     
+    -moz-opacity: 0.75;     
+    opacity: 0.75;         
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+  }
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+var blur = 0;
+var starttime = new Date();
+var startclock = starttime.getTime();
+var mytimeleft = 0;
+
+function doTime() {
+window.setTimeout( "doTime()", 1000 );
+t = new Date();
+time = Math.round((t.getTime() - starttime.getTime())/1000);
+if (mytimeleft) {
+time = mytimeleft - time;
+if (time <= 0) {
+  window.location = "/portal/uniboxlogin.php?res=popup3&uamip=login.secureunibox.com&uamport=";
+}
+}
+if (time < 0) time = 0;
+hours = (time - (time % 3600)) / 3600;
+time = time - (hours * 3600);
+mins = (time - (time % 60)) / 60;
+secs = time - (mins * 60);
+if (hours < 10) hours = "0" + hours;
+if (secs < 10) secs = "0" + secs;
+title = "Online time: " + hours + ":" + mins + ":" + secs;
+if (mytimeleft) {
+title = "Remaining time: " + hours + ":" + mins + ":" + secs;
+}
+// Although it is unused code and showing javascript error on IE but on commenting it is redirecting the browser page on landing URL on every refresh of pop-up
+if(document.all || document.getElementById) {
+	    document.myform.javapass.value=title;
+}
+else {
+self.status = title;
+}
+}
+
+function popUp(URL) {
+if (self.name != "chillispot_popup") {
+chillispot_popup = window.open(URL, 'chillispot_popup', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=700,height=450');
+}
+}
+
+function doOnLoad(result, URL,userurl) {
+var redirurl = userurl;
+var timeleft = '';
+
+if (timeleft) {
+mytimeleft = timeleft;
+}
+if ((result == 1) && (self.name == "chillispot_popup")) {
+doTime();
+}
+if ((result == 1) && (self.name != "chillispot_popup")) {
+chillispot_popup = window.open(URL, 'chillispot_popup', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=700,height=450');
+}
+if ((result == 2) || result == 5) {
+document.form1.uname.focus()
+}
+if ((result == 2) && (self.name != "chillispot_popup")) {
+//chillispot_popup = window.open('', 'chillispot_popup', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=700,height=450');
+//chillispot_popup.close();
+}
+
+if ((result == 12) && (self.name == "chillispot_popup")) {
+doTime();
+if (redirurl) {
+  opener.location = redirurl;
+}
+else if (opener.home) {
+  opener.home();
+}
+else {
+  opener.location = "about:home";
+}
+self.focus();
+blur = 0;
+}
+
+if ((result == 13) && (self.name == "chillispot_popup")) {
+self.focus();
+blur = 1;
+}
+}
+
+function doOnBlur(result) {
+if ((result == 12) && (self.name == "chillispot_popup")) {
+if (blur == 0) {
+  blur = 1;
+  self.focus();
+}
+}
+}
+
+function formatSecondsAsTime(secs, format) {
+var days = new String();
+days  = Math.floor(secs / (3600 * 24));
+var hr   = Math.floor((secs - (days * 3600 * 24))/ 3600);
+var min  = Math.floor((secs - (days * 3600 * 24) - (hr * 3600))/ 60);
+var sec  = Math.floor(secs - (days * 3600 * 24) - (hr * 3600) -  (min * 60));
+if (days > 1) { days = days + " days "; 
+}
+else {
+	 days = days + " day";
+}
+	if (hr < 10) { hr = "0" + hr; }
+if (min < 10) { min = "0" + min; }
+if (sec < 10) { sec  = "0" + sec; }
+if (!hr) { hr = "00"; }
+
+if (format != null) {
+if (days == '0 day') {
+var formatted_time = format.replace('dd', '');
+formatted_time = formatted_time.replace('and', '');
+} else {
+if (days == '1 day') {
+var formatted_time = format.replace('dd', days);
+} 
+else {
+	var formatted_time = format.replace('dd', days);
+}
+}
+	formatted_time = formatted_time.replace('hh', hr);
+	formatted_time = formatted_time.replace('mm', min);
+	formatted_time = formatted_time.replace('ss', sec);
+	return formatted_time;
+} 
+else {
+return hr + ':' + min + ':' + sec;
+}
+}
+
+function bytesToSize(bytes, precision) {
+var kilobyte = 1024;
+var megabyte = kilobyte * 1024;
+var gigabyte = megabyte * 1024;
+var terabyte = gigabyte * 1024;
+
+if ((bytes >= 0) && (bytes < kilobyte)) {
+return bytes + ' B';
+
+} else if ((bytes >= kilobyte) && (bytes < megabyte)) {
+return (bytes / kilobyte).toFixed(precision) + ' KB';
+
+} else if ((bytes >= megabyte) && (bytes < gigabyte)) {
+return (bytes / megabyte).toFixed(precision) + ' MB';
+
+} else if ((bytes >= gigabyte) && (bytes < terabyte)) {
+return (bytes / gigabyte).toFixed(precision) + ' GB';
+
+} else if (bytes >= terabyte) {
+return (bytes / terabyte).toFixed(precision) + ' TB';
+
+} else {
+return bytes + ' B';
+}
+}
+
+function listStats(root) {
+if(root.clientState == 0) {
+	window.close();
+	}
+document.write('<br><div><table>');
+document.write("<tr><td></td><td></td><td style='text-align:right'><img src='../images/refresh_btn.png' onclick='window.location.reload()'/></td></tr>");
+//document.write('<tr><td>Client State</td><td>: ' + root.clientState + '</td></tr>');
+var atPosition = root.session.userName.lastIndexOf('@');
+document.write('<tr><td>Username / Prepaid Code</td><td>: ' + root.session.userName.substring(0,atPosition) + '</td></tr>');
+document.write('<tr><td>MAC Address</td><td>: ' + root.redir.macAddress + '</td></tr>');
+//document.write('<tr><td>IP Address</td><td>: ' + root.redir.ipAddress + '</td></tr>');
+document.write('<tr><td>Online Time</td><td>: ' + formatSecondsAsTime(root.accounting.sessionTime,'dd and hh:mm:ss') + '</td></tr>');
+document.write('<tr><td>Current Download / Upload Usage</td><td>: ' + bytesToSize(root.accounting.inputOctets,2) + ' / ' + bytesToSize(root.accounting.outputOctets, 2) + '</td></tr>');
+
+var remainingTime = new String();
+if(root.session.sessionTimeout != 0) {
+	var session = root.session.sessionTimeout-root.accounting.sessionTime;
+	remainingTime = formatSecondsAsTime(session,'dd and hh:mm:ss');
+	document.write('<tr><td>Remaining Online Time</td><td>: ' + remainingTime + '</td></tr>');
+	}
+
+var remainingIdleTime = new String();
+if(root.session.idleTimeout != 0) {
+	var idleSession = root.session.idleTimeout-root.accounting.idleTime;
+	var remainingIdleTime = formatSecondsAsTime(idleSession,'dd and hh:mm:ss');
+	//document.write('<tr><td>Remaining Idle Time</td><td>: ' + remainingIdleTime + '</td></tr>');
+	}
+if(isNaN(root.session.maxInputOctets) && isNaN(root.session.maxOutputOctets)) {
+}else {
+	var remainingDownload = new String();
+	if(isNaN(root.session.maxInputOctets)) {
+		remainingDownload = '--' ;
+		} else {
+			var download = root.session.maxInputOctets-root.accounting.inputOctets;
+			remainingDownload =  bytesToSize(download, 2);
+			}
+	var remainingUpload = new String();
+	if(isNaN(root.session.maxOutputOctets)) {
+		remainingUpload = '--' ;
+		} else {
+			var upload = root.session.maxOutputOctets-root.accounting.outputOctets;
+			remainingUpload =  bytesToSize(upload, 2);
+			}				
+	document.write('<tr><td>Remaining Download / Upload Usage</td><td>: ' + remainingDownload + ' / ' + remainingUpload + '</td></tr>');
+	}
+
+var remainingUsage = new String();
+if(!isNaN(root.session.maxTotalOctets)) {
+	var usage = root.session.maxTotalOctets - (root.accounting.inputOctets + root.accounting.outputOctets);
+	remainingUsage = bytesToSize(usage,2);
+	document.write('<tr><td>Remaining Usage</td><td>: ' + remainingUsage + ' </td></tr><br>');
+	}
+document.write('<tr><td colspan=2><center><h3><a href = '+ root.redir.logoutURL +'>Logout</a></h3></center></td></tr></table>');
+setTimeout('location.reload(true);',30000);
+}
+</script>
+</head>
+<body onLoad="javascript:doOnLoad(1, 'http://login.secureunibox.com/portal/uniboxlogin.php?res=popup2&welcomeurl=http://login.secureunibox.com/onboardPortalEngine/livesessionstatus.php','http://login.secureunibox.com/onboardPortalEngine/livesessionstatus.php')" onBlur = 'javascript:doOnBlur(1)'>
+<div id='loading' class='loading-invisible'>
+<img src='../images/animated_loading.gif' border=0/>
+</div>
+<script type='text/javascript'>
+document.getElementById('loading').className = 'loading-visible';
+var hideDiv = function(){document.getElementById('loading').className = 'loading-invisible';};
+var oldLoad = window.onload;
+var newLoad = oldLoad ? function(){hideDiv.call(this);oldLoad.call(this);} : hideDiv;
+window.onload = newLoad;
+</script>
+
+<h1 style="text-align: center;">Logged in</h1>
+<center>
+<a href="http://login.secureunibox.com:4990/logoff">Logout</a>
+</center>
+<!--iframe src='http://www.hotspotclicks.com/ads/default/unibox-success-login.html' width='1' height='1' frameborder='0'></iframe-->
+</body>
+<script>
+//function for HSC analytics
+window.onload = function()
+{
+        var xmlhttp;
+        if (window.XMLHttpRequest)
+        {       // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {       // code for IE6, IE5
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("POST","http://www.hotspotclicks.com/ads/default/unibox-success-login.html",false);
+        xmlhttp.send();
+}
+</script>
+</html><META HTTP-EQUIV='Refresh' Content='0; URL=http://login.secureunibox.com/onboardPortalEngine/livesessionstatus.php'>

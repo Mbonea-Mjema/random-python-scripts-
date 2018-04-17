@@ -1,0 +1,8 @@
+..\sseclient.py
+..\__pycache__\sseclient.cpython-34.pyc
+.
+dependency_links.txt
+PKG-INFO
+requires.txt
+SOURCES.txt
+top_level.txt

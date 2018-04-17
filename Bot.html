@@ -1,0 +1,598 @@
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Bank of Tanzania: Financial Markets - Treasury Bonds Auction Summary</title>
+<link rel="stylesheet" type="text/css" href="/bot.css">
+<script type="text/javascript">
+
+function getPos(inputElement) {
+    var coords =  new Object();
+    coords.x = 0;
+    coords.y = 0;
+    try {
+        targetElement = inputElement;
+        if(targetElement.x && targetElement.y) {
+            coords.x = targetElement.x;
+            coords.y = targetElement.y;
+        } else {
+            if(targetElement.offsetParent) {
+                coords.x += targetElement.offsetLeft;
+                coords.y += targetElement.offsetTop;
+                while(targetElement = targetElement.offsetParent) {
+                    coords.x += targetElement.offsetLeft;
+                    coords.y += targetElement.offsetTop;
+                }
+            } else {
+                //alert("Could not find any reference for coordinate positioning.");
+            }
+        }
+        return coords;
+    } catch(error) {
+        //alert(error.msg);
+        return coords;
+    }
+}
+
+function mouseOver(submenu, toplink)
+{
+	var submenuItem = document.getElementById(submenu);
+	var LinkItem = document.getElementById(toplink);
+	var yPosition = document.getElementById('yCoordinate');	
+	var rowCount = document.getElementById(submenu).getElementsByTagName("TR").length;
+	var item, item1, test;
+
+	submenuItem.style.left = getPos(LinkItem).x + 'px'; 
+	submenuItem.style.top = getPos(LinkItem).y + LinkItem.offsetHeight -1 + 'px';	
+	submenuItem.style.visibility = 'visible';
+	for(i =0; i<rowCount; i++)
+		{
+			item=submenu + i;
+			item1=submenu + 'TD' + i;
+			if (document.getElementById(item).currentStyle.color == '#86bd20')
+				{
+					document.getElementById(item1).style.background = '#EFEFEF';
+				}
+			else
+				{
+					document.getElementById(item1).style.background = '#C0C0C0';
+				}
+		}
+}
+
+function mouseOut(submenu)
+{
+	var submenuItem = document.getElementById(submenu);
+	submenuItem.style.visibility = 'hidden';
+}
+</script>
+
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" bgcolor="#575A5C">
+
+<table border="0" id="table2" width="958px" cellspacing="0px" bgcolor="#FFFFFF"  align=center  cellspacing="0" cellpadding="0" >
+		<tr>
+			<td align="center" height="55px" valign="bottom" width="958px">
+			<img border="0" src="/images/headerTop.GIF">
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0px" width="900px" id="table7" align=center  cellspacing="0" cellpadding="0" >
+					<tr>
+						<td align="right" valign="top">
+							<form method="get" action="http://www.google.com/search">
+								<a href="/sw/default.asp">Swahili</a> | 
+								<a href="/Default.asp">Home</a> | 
+								<a href="/Contacts.asp">Contact us</a> | 
+								<a href="/Feedback.asp">Feedback</a> | Search
+								<input type="text" name="q" size="8" value=""/>
+								<input type="submit" value="Go"/>
+								<input type="hidden"  name="sitesearch" value="bot.go.tz"/>
+							</form>		
+						</td>
+					</tr>
+				</table>
+				<table border="0px" id="table8" width="840px" align="center"  cellspacing="0" cellpadding="0" >
+					<tr>
+						<td width="27%" align="left" valign="Bottom">
+							<img border="1" src="/images/arm.png" lowsrc="Bank%20of%20Tanzania%20Logo" longdesc="Bank of Tanzania Logo" alt="Bank of Tanzania Logo" >
+						</td>
+						<td  width="46%" align="left" valign="Bottom">
+							<img border="0" src="/images/BOTnameRGB096over192-3.gif" lowsrc="Bank%20of%20Tanzania" alt="Bank of Tanzania" longdesc="Bank of Tanzania" >
+						</td>
+            <td width="27%" align="right" valign="Bottom">
+              <img border="1" src="/images/BOTgoldLogo10.jpg" lowsrc="Bank%20of%20Tanzania%20Logo" longdesc="Bank of Tanzania Logo" alt="Bank of Tanzania Logo" >
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>	
+		<tr>
+			<td valign="middle">
+					<table border="0" id="table3" cellspacing="0" cellpadding="0" height="17px" align="center">
+						<tr>
+							<td align="center">
+								<img border="0" src="/images/FlagColours.jpg" width="884px" height="9px">
+							</td>
+						</tr>
+					</table>
+			</td>
+		</tr>	
+		<tr bgcolor="#FFFFFF">
+			<td  height="26" valign="top" bgcolor="#FFFFFF" nowrap> 
+				<div align="center" id = "yCoordinate" style="position:Relative;">
+					<a href="/AboutBOT/AboutBOT.asp" id = "AboutBOTlink" onmouseOver="mouseOver('AboutBOTsubmenu','AboutBOTlink')" onmouseOut="mouseOut('AboutBOTsubmenu')">
+					<img border="0" src="/images/AboutBOT.JPG" width="150" height="26" lowsrc="About%20the%20Bank" longdesc="About the Bank" alt="About the Bank"></a><a href="/Publications/PublicationsAndStatistics.asp" id = "PublicationsLink" onmouseOver="mouseOver('Publicationssubmenu','PublicationsLink')" onmouseOut="mouseOut('Publicationssubmenu')"><img border="0" src="/images/Publicationss.JPG" width="150" height="26" lowsrc="Publications" longdesc="Publications" alt="Publications"></a><a href="/FinancialMarkets/FinancialMarkets.asp" id = "FinancialMarketsLink" onmouseOver="mouseOver('FinancialMarketsSubmenu','FinancialMarketsLink')" onmouseOut="mouseOut('FinancialMarketsSubmenu')"><img border="0" src="/images/FinancialMarkets.JPG" width="150" height="26" lowsrc="Financial%20Markets" longdesc="Financial Markets" alt="Financial Markets"></a><a href="/BankingOperations/BankingOperations.asp" id = "BankingOperationsLink" onmouseOver="mouseOver('BankingOperationsSubmenu','BankingOperationsLink')" onmouseOut="mouseOut('BankingOperationsSubmenu')"><img border="0" src="/images/BankingOperations.JPG" width="150" height="26" lowsrc="Banking%20Operations" longdesc="Banking Operations" alt="Banking Operations"></a><a href="/BankingSupervision/BankingSupervision.asp" id = "BankingSupervisionLink" onmouseOver="mouseOver('BankingSupervisionSubmenu','BankingSupervisionLink')" onmouseOut="mouseOut('BankingSupervisionSubmenu')"><img border="0" src="/images/BankingSupervision.JPG" width="150" height="26" lowsrc="Banking%20Supervision" longdesc="Banking Supervision" alt="Banking Supervision"></a><a href="/PaymentSystem/PaymentSystem.asp" id = "PaymentSystemLink" onmouseOver="mouseOver('PaymentSystemSubmenu','PaymentSystemLink')" onmouseOut="mouseOut('PaymentSystemSubmenu')"><img border="0" src="/images/PaymentSystem.JPG" width="150" height="26" lowsrc="Payment%20System.JPG" longdesc="Payment System" alt="Payment System"></a>
+				</div>
+				<div onmouseOver="mouseOver('AboutBOTsubmenu','AboutBOTlink')" onmouseOut="mouseOut('AboutBOTsubmenu')">			
+					<table id = "AboutBOTsubmenu" cellspacing="1px" cellpadding="1px" width="270px" style="position:Absolute; z-Index:130; top:18px; display:block; visibility:hidden;">
+						<tr>
+							<td align="left" id = "AboutBOTsubmenuTD0" width="270px" nowrap bgcolor="#C0C0C0">
+								<a href="/AboutBOT/AboutBOT.asp" id = "AboutBOTsubmenu0">About the Bank - Home</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "AboutBOTsubmenuTD1" width="270px" nowrap bgcolor="#C0C0C0">
+								<a href="/AboutBOT/BOTFunction.asp" id = "AboutBOTsubmenu1">Primary Objective and Function of the Bank</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "AboutBOTsubmenuTD2" width="270px" nowrap bgcolor="#C0C0C0">
+								<a target="_blank" href="/AboutBOT/BOTAct2006.pdf" id = "AboutBOTsubmenu2">BOT Act, 2006</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "AboutBOTsubmenuTD3" width="270px" nowrap bgcolor="#C0C0C0">
+								<a href="/AboutBOT/BoardOfDirectors.asp" id = "AboutBOTsubmenu3">Board of Directors</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "AboutBOTsubmenuTD4" width="270px" nowrap bgcolor="#C0C0C0">
+								<a href="/AboutBOT/BOTLocation.asp" id = "AboutBOTsubmenu4">BOT Location</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "AboutBOTsubmenuTD5" width="270px" nowrap bgcolor="#C0C0C0">
+								<a href="/AboutBOT/BOTHistory.asp" id = "AboutBOTsubmenu5">History of the Bank</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "AboutBOTsubmenuTD6" width="270px" nowrap bgcolor="#C0C0C0">
+								<a href="/AboutBOT/BOTWebsite.asp" id = "AboutBOTsubmenu6">BOT Website</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "AboutBOTsubmenuTD7" width="270px" nowrap bgcolor="#C0C0C0">
+								<a href="/AboutBOT/FormerGovernors.asp" id = "AboutBOTsubmenu7">Governors and Deputy Governors</a>
+							</td>
+						</tr>
+					</table>
+				</div>				
+				<div onmouseOver="mouseOver('Publicationssubmenu','PublicationsLink')" onmouseOut="mouseOut('Publicationssubmenu')">			
+					<table id = "Publicationssubmenu" cellspacing="1px" cellpadding="1px" width="300px" style="position:Absolute; z-Index:130; top:18px;  display:block; visibility:hidden;">
+						<tr>
+							<td align="left" id = "PublicationssubmenuTD0" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href="/Publications/PublicationsAndStatistics.asp" id = "Publicationssubmenu0">Publications - Home</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "PublicationssubmenuTD1" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href="/Publications/PublicationsAndStatistics.asp#RegularPublications" id = "Publicationssubmenu1">Regular Publications</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "PublicationssubmenuTD2" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href="/Publications/PublicationsAndStatistics.asp#Statistics" id = "Publicationssubmenu2">Statistics of Major Macroeconomic Indicators</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "PublicationssubmenuTD3" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href="/Publications/PublicationsAndStatistics.asp#FinancialStatements" id = "Publicationssubmenu3">Financial Statements</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div onmouseOver="mouseOver('FinancialMarketsSubmenu','FinancialMarketsLink')" onmouseOut="mouseOut('FinancialMarketsSubmenu')">			
+					<table id = "FinancialMarketsSubmenu" cellspacing="1px" cellpadding="1px" width="250" style="position:Absolute; z-Index:130; top:18px;  display:block; visibility:hidden;">
+						<tr>
+							<td align="left" id = "FinancialMarketsSubmenuTD0" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/FinancialMarkets/FinancialMarkets.asp' id = "FinancialMarketsSubmenu0">Financial Markets - Home</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "FinancialMarketsSubmenuTD1" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/FinancialMarkets/FinMarketsInTanzania.asp' id = "FinancialMarketsSubmenu1">Financial Markets in Tanzania</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "FinancialMarketsSubmenuTD2" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/FinancialMarkets/FinancialMarkets.asp#GovernmentSecurities' id = "FinancialMarketsSubmenu2">Government Securities</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "FinancialMarketsSubmenuTD3" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/FinancialMarkets/FinancialMarkets.asp#ApplicationForms' id = "FinancialMarketsSubmenu3">Application Forms</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "FinancialMarketsSubmenuTD4" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/FinancialMarkets/FinancialMarkets.asp#InterbankMoneyMarkets' id = "FinancialMarketsSubmenu4">Interbank Money Markets</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "FinancialMarketsSubmenuTD5" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/FinancialMarkets/FinancialMarkets.asp#Repo' id = "FinancialMarketsSubmenu5">Repo</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "FinancialMarketsSubmenuTD6" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/FinancialMarkets/FinancialMarkets.asp#ForeignExchangeMarkets' id = "FinancialMarketsSubmenu6">Foreign Exchange Markets</a>
+							</td>
+						</tr>
+                                                      <tr><td align="left" id = "FinancialMarketsSubmenuTD7" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/FinancialMarkets/FinancialMarkets.asp#BoT-CDS' id = "FinancialMarketsSubmenu7">BoT Central Depository System</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div onmouseOver="mouseOver('BankingOperationsSubmenu','BankingOperationsLink')" onmouseOut="mouseOut('BankingOperationsSubmenu')">			
+					<table id = "BankingOperationsSubmenu" cellspacing="1px" cellpadding="1px" width="260px" style="position:Absolute; z-Index:130; top:18px;  display:block; visibility:hidden;">
+						<tr>
+							<td align="left" id = "BankingOperationsSubmenuTD0" nowrap width="260px" bgcolor="#C0C0C0">
+								<a href='/BankingOperations/BankingOperations.asp' id = "BankingOperationsSubmenu0">Banking Operations - Home</a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="left" id = "BankingOperationsSubmenuTD2" nowrap width="260px" bgcolor="#C0C0C0">
+								<a href='/BankingOperations/Banking_Dir.asp' id = "BankingOperationsSubmenu2">Banking Directorate</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "BankingOperationsSubmenuTD3" nowrap width="260px" bgcolor="#C0C0C0">
+								<a href='/BankingOperations/Banking_Dept.asp' id = "BankingOperationsSubmenu3">Banking Department Operations</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "BankingOperationsSubmenuTD3" nowrap width="260px" bgcolor="#C0C0C0">
+								<a href='/BankingOperations/Currency.asp' id = "BankingOperationsSubmenu3">Currency Department Operations</a>
+							</td>
+						</tr>
+
+					</table>
+				</div>				
+				<div onmouseOver="mouseOver('BankingSupervisionSubmenu','BankingSupervisionLink')" onmouseOut="mouseOut('BankingSupervisionSubmenu')">			
+					<table id = "BankingSupervisionSubmenu" cellspacing="1px" cellpadding="1px" width="250px" style="position:Absolute; z-Index:130; top:18px;  display:block; visibility:hidden;">
+						<tr>
+							<td align="left" id = "BankingSupervisionSubmenuTD0" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/BankingSupervision/BankingSupervision.asp' id = "BankingSupervisionSubmenu0">Banking Supervision - Home</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "BankingSupervisionSubmenuTD1" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/BankingSupervision/Directory of Banks and Financial institutions operating in Tanzania _June 2017.pdf' id = "BankingSupervisionSubmenu1">Banks and Financial Institutions</a>
+							</td>
+						</tr>
+						
+						<!--<tr>
+							<td align="left" id = "BankingSupervisionSubmenuTD3" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/BankingSupervision/RegisteredFinancialInst.asp' id = "BankingSupervisionSubmenu3" target="_blank">Financial Institutions</a>
+							</td>-->
+						</tr>
+						<tr>
+							<td align="left" id = "BankingSupervisionSubmenuTD4" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/BankingSupervision/BureauOperators.asp' id = "BankingSupervisionSubmenu4">Bureaux de Change Operators</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "BankingSupervisionSubmenuTD5" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/BankingSupervision/SupervisoryMethodololgies.asp' id = "BankingSupervisionSubmenu5">Supervisory Methodologies </a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "BankingSupervisionSubmenuTD6" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/BankingSupervision/SupervisoryMethodololgies.asp#LicensingConditions' id = "BankingSupervisionSubmenu6">Licensing Conditions</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "BankingSupervisionSubmenuTD7" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/BankingSupervision/Approved Independent Audit Firms_ JUNE 2017.pdf' id = "BankingSupervisionSubmenu7">List of Approved Auditors</a>							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "BankingSupervisionSubmenuTD7" nowrap width="250px" bgcolor="#C0C0C0">
+								<a href='/BankingSupervision/Circulars.asp' id = "BankingSupervisionSubmenu8">Circulars</a>							</td>
+						</tr>
+					</table>
+				</div>		
+				<div onmouseOver="mouseOver('PaymentSystemSubmenu','PaymentSystemLink')" onmouseOut="mouseOut('PaymentSystemSubmenu')">			
+					<table id = "PaymentSystemSubmenu" cellspacing="1px" cellpadding="1px" width="300" style="position:Absolute; z-Index:130; top:18px;  display:block; visibility:hidden;">
+						<tr>
+							<td align="left" id = "PaymentSystemSubmenuTD0" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href='/PaymentSystem/paymentSystem.asp' id = "PaymentSystemSubmenu0">Payment System - Home</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "PaymentSystemSubmenuTD1" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href='/PaymentSystem/paymentSystem.asp#Overview' id = "PaymentSystemSubmenu1">Payment Systems Publications</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "PaymentSystemSubmenuTD2" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href='/PaymentSystem/paymentSystem.asp#TISS' id = "PaymentSystemSubmenu2">Payment Systems  Guidelines</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "PaymentSystemSubmenuTD3" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href='/PaymentSystem/paymentSystem.asp#PublicationsOnPaymentSystem' id = "PaymentSystemSubmenu3">Payment Systems News and Events</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "PaymentSystemSubmenuTD4" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href='/PaymentSystem/paymentSystem.asp#Reports' id = "PaymentSystemSubmenu4">Payment Systems Newsletter</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" id = "PaymentSystemSubmenuTD5" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href='/PaymentSystem/FAQ.asp' id = "PaymentSystemSubmenu5">Payment Systems Frequently asked questions</a>
+							</td>
+						</tr>
+					
+									
+											
+						<tr>
+							<td align="left" id = "PaymentSystemSubmenuTD9" nowrap width="300px" bgcolor="#C0C0C0">
+								<a href='/PaymentSystem/NPSoverview.asp#CONTACTS' id = "PaymentSystemSubmenu9">Contacts</a>
+							</td>
+						</tr>						
+					</table>
+				</div>		
+			</td>
+		</tr>
+</table>
+
+
+<table align="center" border="0" width="958px" id="table1" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+	<tr>
+		<td>
+			
+		<table border="0" width="900px" align="center"><tr><td>
+
+<h1 align="center">Financial Markets</h1>
+
+<h2 align="center">Treasury Bonds Auction Summary</h2>
+
+<div align="center">
+
+<table border="0" cellpadding="0" width="424">
+  <tr>
+    <td align="center" valign="top" bgcolor="#808080" colspan="3" width="404">
+    
+  <font face="Verdana,arial" size="2" color="#FFFFFF">
+  
+Auction Summary<br>
+&nbsp; 11.44% Treasury Bond 10
+Issue No. 314  Auction No. 1 Held On
+ 7/Jun/2017</font><font color="#FFFFFF"> </font>
+     
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      1</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">
+      Redemption
+      Date<br>
+      </font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+    
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">8/Jun/2027</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      2</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">
+      No. of Bids Received<br>
+      </font>
+      </p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">165</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      3</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">
+      No. of Successful Bids<br>
+      </font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">24</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      4</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">
+      Highest Bid /100<br>
+      </font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">83.6448</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      5</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">
+      Lowest Bid /100<br>
+      </font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">66.5273</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      6</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font face="verdana,arial" size="2">Minimum Successful
+      Price/100<br>
+      </font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">81.1096</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      7</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font face="verdana,arial" size="2">Weighted Average
+      Price for Successful Bids</font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">82.9302</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      8</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font face="verdana,arial" size="2">Weighted Average
+      Yield to Maturity</font></p>
+    </td>
+    <td align="left" nowrap valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">14.7581</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      9</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font face="verdana,arial" size="2">Weighted Average
+      Coupon Yield</font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">13.7947</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      10</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font face="verdana,arial" size="2">Amount Offered Tshs
+      (000,000)<br>
+      </font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">111,540.00</font></p>
+    </td>
+  </tr>
+    <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      11</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font face="verdana,arial" size="2">Amount Tendered Tshs
+      (000,000)</font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">401,257.10</font></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      12</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font face="verdana,arial" size="2">Undersubscribed (+)
+      / Oversubscribed (-) Tshs (000,000)</font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">-289,717.10</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE" width="16" nowrap>
+      <p align="right"><font color="#000000" face="verdana,arial" size="2">
+      13</font></p>
+    </td>
+    <td valign="middle" bgcolor="#EEEEEE" width="325" nowrap>
+      <p align="left"><font face="verdana,arial" size="2">Successful Amount
+      Tshs (000,000)</font></p>
+    </td>
+    <td nowrap align="left" valign="middle" bgcolor="#EEEEEE" width="89">
+      <p align="left"><font color="#000000" face="verdana,arial" size="2">111,540.00</font></p>
+    </td>
+  </tr>
+</table></div>
+&nbsp;&nbsp;
+<p><font face="verdana, arial" size="1">INTEREST PAYMENT DATES   07/12
+                         08/06</font>
+		</div>
+		</td></tr></table>
+					
+		</td>
+	</tr>
+</table>
+<table border="0" width="958" id="table15" align="center" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="29px">&nbsp;</td>
+		<td width="900px" background="/images/bg.JPG">
+			<p align="center">| <a target="_blank" href="/TrainingInstitute/">Bank of Tanzania Training Institute</a> | 
+					    <a  target="_blank" href="https://owa.bot.go.tz/owa">Webmail Access</a> |
+			                    <a href="/DepositInsuranceBoard/DepositInsuranceBoard.asp">Deposit Insurance Board</a> |
+			                    <a href="/Archive/ArchiveDirectory.asp">Archive Directory</a> |
+			                    <a href="/Adverts/Adverts.asp">Jobs, Tenders and Press Release</a> |		
+		</td>
+		<td width="29px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="958" colspan="3" align="center">				
+			<a href="/SiteMap.asp">Site Map</a> | <a href="/WebsiteDisclaimer.asp">Website Disclaimer</a> | <a href="/PrivacyPolicy.asp">Privacy Policy</a> | <a href="/EmailDisclaimer.asp">Email Disclaimer</a> | <a href="mailto:Webmaster@bot.go.tz">Webmaster@bot.go.tz</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center" height="32px"  bgcolor="#575A5C">
+			<img border="0" src="/images/headerBottom.GIF" width="958px" height="32px">
+		</td>
+	</tr>
+</table>
+</body>
+</html>

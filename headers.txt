@@ -1,0 +1,15 @@
+headers={
+   "Accept": 'text/html, application/xhtml+xml, image/jxr, */*'
+
+   'Accept-Encoding': 'gzip, deflate, br',
+
+   'Accept-Language': 'en-US',
+
+   'Cookie':' __cfduid=d59856113d2a0ed37b3d4d94ddf5461ea1504903796; cf_clearance=659c9727b60733affb2b48a3ce93d3b8bab06d93-1504905276-14400; _ga=GA1.2.1209262524.1504903803; _gid=GA1.2.1125732312.1504903803; __atuvc=9%7C36; __atuvs=59b3027b40f1c079008; subscribe=1; night-mode=1; notice-favorite-21378=true',
+
+   'Host': '123movies.film',
+
+   'Referer': 'https://123movies.film/',
+
+   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063'
+}

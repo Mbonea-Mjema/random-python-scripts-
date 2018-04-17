@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html class='   psc_dir-ltr psc_form-xlarge' dir='ltr' lang='en'>
+<!-- Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved. -->
+<!-- OTHERS/0/WIN; ToolsRel=8.55.10; User=2015014465; DB=CSPRD/ORACLE; AppServ=//128.10.11.8:9000; -->
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script language='JavaScript'>
+var  totalTimeoutMilliseconds = 1200000; 
+var  warningTimeoutMilliseconds = 1080000; 
+var timeOutURL = 'http://117.55.241.168:8080/psp/CSPRD/EMPLOYEE/SA/?cmd=expire';
+var timeoutWarningPageURL = 'http://117.55.241.168:8080/psc/CSPRD/EMPLOYEE/SA/s/WEBLIB_TIMEOUT.PT_TIMEOUTWARNING.FieldFormula.IScript_TIMEOUTWARNING';
+var sRCRequestURL = 'http://117.55.241.168:8080/psc/CSPRD/EMPLOYEE/SA/s/WEBLIB_PTRC.ISCRIPT1.FieldFormula.IScript_RC_REQUEST';
+</script> 
+
+<link rel='apple-touch-icon' href='/cs/CSPRD/cache/LOGO_FAVICON_1.png' />
+<link rel='icon' href='/cs/CSPRD/cache/LOGO_FAVICON_1.png' />
+<link id=PSSTYLEDEF_FMODE_1_css rel='stylesheet' type='text/css' href='/cs/CSPRD/cache/PSSTYLEDEF_FMODE_1.css' />
+<link rel='stylesheet' type='text/css' href='/cs/CSPRD/cache/PTS_NUI_FFSTYLE_1.css' />
+<link rel='stylesheet' type='text/css' href='/cs/CSPRD/cache/PTNUI_LIST_CSS_1.css' />
+<link rel='stylesheet' type='text/css' href='/cs/CSPRD/cache/PS_CHART_DVT_NUI_1.css' />
+<title>Student Ledger</title>
+<script language='JavaScript'>
+var winName='win0';
+var winParent = null;
+var modalID = null;
+var modalZoomName = null;
+var baseKey_win0 = "\x1b";
+var altKey_win0 = "0J5678\xbc\xbe\xbf\xde";
+var ctrlKey_win0 = "JK";
+var saveWarningKeys_win0 = "";
+var firstFocusID = null;
+var sMDWrapperStyle='', sMDSide1Style='', sMDSide2Style='', sMDHeaderStyle='', sMDFooterStyle='';
+var isNewSaveWarn = true;
+var bAccessibility_win0 =false;
+var bFMode =true;
+var bDoModal_win0 = false;
+var bJSModal_win0 = false;
+var bPromptPage_win0 = false;
+var bTabOverTB_win0 = false;
+var bTabOverPg_win0 = false;
+var bTabOverNonPS_win0 = false;
+var strCurrUrl='http://117.55.241.168:8080/psp/CSPRD/EMPLOYEE/SA/c/SU_CS_MENU.SU_STU_SF.GBL';
+var strReqURL='';
+var bIncInNavigation='T';
+var szPinCrefID='SU_STU_SF';
+var szPinCrefReg='T';
+var szPinCrefLabel='Student Ledger';
+var szCrefID='SU_STU_SF';
+var szCrefReged='T';
+var szCrefVisible='T';
+var szCrefLabel='Student Ledger';
+var szCrefUsageType='TARG';
+var localNodes = ['HRMS', 'PSFT_CS', 'PSFT_HR', 'SA'];
+bGenDomInfo = false;
+var szCalendarType = 'G';
+var bMenuSrchPage = false;
+var bGuidedAG = false;
+var bWSRP=0;var szMenuSrchText = "-999999-";
+var disablePNSubscriptions=1;var modalBackUrl = '/cs/CSPRD/cache/PT_NUI_BACK_SMALL_IMG_1.svg';
+var modalBackAlt = 'Back';
+var sPopupTitle = 'Popup window';
+var modalCloseUrl = '/cs/CSPRD/cache/PT_MODAL_CLOSE_NUI_1.svg';
+var modalCloseAlt = 'Close';
+var modalResizeUrl= '/cs/CSPRD/cache/PT_RESIZE_IMG_1.gif';
+var modalResizeAlt = 'Drag to resize';
+var modalMoveAlt = 'Drag to move';
+</script>
+<script language='JavaScript'>
+var scrollFieldList = [['win0divSU_STU_SF_WRK_',1, 1, 0, 0,0, 1,0,0, 0],['win0hdrdivPT_ACTION_MENUgrp',1, 0, 0, 0,0, 1,0,0, 1]];
+</script>
+<script language='JavaScript'>
+var PFieldList_win0 = [['ITEM_TYPE_TBL_DESCR',7]];
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_COMMON_FMODE_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_AJAX_NET_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_SAVEWARNINGSCRIPT_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_PAGESCRIPT_win0_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_EDITSCRIPT_win0_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_PAGESCRIPT_FMODE_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_TYPEAHEAD_win0_MIN_1.js'>
+</script>
+<script language='JavaScript'>
+DoUrlNUI();
+var nResubmit=0;
+var nLastAction=0;
+var loader=null;
+if (typeof(bCleanHtml) == 'undefined')
+	var bCleanHtml = false;
+setupTimeout2();
+var postUrl_win0='http://117.55.241.168:8080/psc/CSPRD/EMPLOYEE/SA/c/SU_CS_MENU.SU_STU_SF.GBL';
+function aAction_win0(form, id, params, bAjax, bPrompt, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType)
+{
+setupTimeout2();
+if ((id != '#ICSave'))
+processing_win0(1,3000);
+aAction0_win0(form, id, params, bAjax, bPrompt, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType);
+}
+function submitAction_win0(form, id, event, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType)
+{
+setupTimeout2();
+if (!ptCommonObj2.isICQryDownload(form, id))
+ { processing_win0(1,3000); }
+preSubmitProcess_win0(form, id);
+var spellcheckpos = id.indexOf('$spellcheck');
+if ((spellcheckpos != -1) && (id.indexOf('#KEYA5') != -1))
+	form.ICAction.value = id.substring(0,spellcheckpos);
+else 
+	form.ICAction.value=id;
+var actionName = form.ICAction.value;
+form.ICXPos.value=ptCommonObj2.getScrollX();
+form.ICYPos.value=ptCommonObj2.getScrollY();
+bcUpdater.storeBcDomData();
+if ((typeof(bAutoSave) != 'undefined') && bAutoSave)
+	form.ICAutoSave.value = '1';
+if (!ptCommonObj2.isAJAXReq(form, id) && !ptCommonObj2.isPromptReq(id)){
+if (nLastAction == 1 && nResubmit > 0) return;
+form.ICResubmit.value=nResubmit;
+form.submit();
+if (!ptCommonObj2.isICQryDownload(form, id))
+	nResubmit++;
+}
+else if (ptCommonObj2.isPromptReq(id))
+	pAction_win0(form, id, arguments[2]);
+else
+	aAction_win0(form, actionName, null, true, false, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType);
+cancelBubble(event);
+}
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_CALENDARSCRIPT1_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_CALENDARSCRIPT_win0_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PTMAF_PUSH_JS_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PT_CHART_LOAD_win0_MIN_1.js'>
+</script>
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PS_CHART_DVT_JS_MIN_1.js'>
+</script>
+<script language='javascript'>
+var pt_calHeadstyle=" class='PTCALHEAD' "
+var pt_calWeekHeadstyle=" class='PTCALWEEKHEAD' "
+function dateitemrefs()
+{
+this.pt_dateheader = "/cs/CSPRD/cache/PT_PORTAL_IC_CLOSE_SD_CSS_1.gif";
+this.pt_datering = "/cs/CSPRD/cache/PT_CURRENT_DATE_SD_CSS_1.gif";
+this.pt_datesel = "/cs/CSPRD/cache/PT_SELECTED_DATE_SD_CSS_1.gif";
+this.pt_nextmonth = "/cs/CSPRD/cache/PT_RIGHT_SCROLL_SD_CSS_1.gif";
+this.pt_prevmonth= "/cs/CSPRD/cache/PT_LEFT_SCROLL_SD_CSS_1.gif";
+this.pt_daystitle_hijri = "/cs/CSPRD/cache/PT_DATE_TITLE_S6_1.GIF";
+this.pt_daystitle_thai = "/cs/CSPRD/cache/PT_DATE_TITLE_S0_1.GIF";
+this.pt_daystitle_s0 = "/cs/CSPRD/cache/PT_DATE_TITLE_S0_1.GIF";
+this.pt_daystitle_m1 = "/cs/CSPRD/cache/PT_DATE_TITLE_M1_1.GIF";
+this.pt_daystitle_t2 = "/cs/CSPRD/cache/PT_DATE_TITLE_T2_1.GIF";
+this.pt_daystitle_w3 = "/cs/CSPRD/cache/PT_DATE_TITLE_W3_1.GIF";
+this.pt_daystitle_t4 = "/cs/CSPRD/cache/PT_DATE_TITLE_T4_1.GIF";
+this.pt_daystitle_f5 = "/cs/CSPRD/cache/PT_DATE_TITLE_F5_1.gif";
+this.pt_daystitle_s6 = "/cs/CSPRD/cache/PT_DATE_TITLE_S6_1.GIF";
+}
+ 
+function LoadCalendar()
+{
+var dateitems = new dateitemrefs();
+loadImages(dateitems);
+}
+function DatePrompt0_win0(dtfield,promptfield,yrfmt,bsubmit)
+{
+setupTimeout2();
+openDate_win0(dtfield, promptfield, "DMY/"+yrfmt,bsubmit,"G",0);
+}
+</script>
+<link id=PTRC_FFSTYLE_1_css rel='stylesheet' type='text/css' href='/cs/CSPRD/cache/PTRC_FFSTYLE_1.css' />
+<script language='JavaScript' type='text/javascript' src='/cs/CSPRD/cache/PTNUI_MENU_JS_MIN_1.js'>
+</script>
+<script language='JavaScript'  ptdefer='defer'>
+var bInModal = false;
+function onLoadExt_win0() {
+modalZoomName = null;
+var oWin=window;
+var oDoc=document;
+ptTAObj_win0.init(oWin,oDoc,oDoc.win0,'/cs/CSPRD/cache/PT_SRT2UP_SEL_1.gif','/cs/CSPRD/cache/PT_SRT2DN_SEL_1.gif','/cs/CSPRD/cache/PT_PORTAL_IC_CLOSE_1.gif',500);
+var pt_wrapper = document.getElementById('PT_WRAPPER');
+if (pt_wrapper) {pt_wrapper.setAttribute('class','ps_wrapper  pst_side2-hidden pst_panel-mode  pst_side1-disabled');
+addClass(pt_wrapper,sMDWrapperStyle);
+}var objPanelControlStyle = document.getElementById('ICPanelControlStyle');
+if (objPanelControlStyle) objPanelControlStyle.value='pst_side2-hidden pst_panel-mode  pst_side1-disabled';
+var objSide2Wrapper = document.getElementById('PT_SIDE2');
+if (objSide2Wrapper) {objSide2Wrapper.setAttribute('class','pst_panel-side2 pst_panel-systemrc ');
+addClass(objSide2Wrapper,sMDSide2Style);
+}var pt_pageinfo = document.getElementById('pt_pageinfo');
+if (pt_pageinfo) {
+pt_pageinfo.setAttribute('Page', 'SU_STU_SF');
+pt_pageinfo.setAttribute('Component', 'SU_STU_SF');
+pt_pageinfo.setAttribute('Menu', 'SU_CS_MENU');
+pt_pageinfo.setAttribute('Mode', 'FLUID');
+}
+initWorkers('/cs/CSPRD/cache/PT_WORKER_MIN_1.js',5);
+g_bAccessibilityMode=false;
+var actn='';
+setKeyEventHandler_win0();setMouseEventHandler();
+ptEvent.add(window,'scroll',positionWAIT_win0);self.scroll(0,0);
+if (typeof ptGridObj_win0 != 'undefined' && ptGridObj_win0)
+ ptGridObj_win0.clearGridArr();
+objToBeFocus = null;
+if (typeof oWin == 'undefined') setEventHandlers_win0('ICFirstAnchor_win0', 'ICLastAnchor_win0', false);
+ else
+ oWin.setEventHandlers_win0('ICFirstAnchor_win0', 'ICLastAnchor_win0', false);
+try{
+portalContextNodeURI = 'http://117.55.241.168:8080/psc/CSPRD/EMPLOYEE/SA';
+SearchPageClose();
+}catch(e) { if(typeof String !="undefined") alert('custom javascript error '+e)}
+if (top.window.isFModeLayout()) top.window.initHelp();
+postUrl_win0='http://117.55.241.168:8080/psc/CSPRD/EMPLOYEE/SA/c/SU_CS_MENU.SU_STU_SF.GBL';
+initScrolls0(false);
+setFocus_win0('SU_STU_SF_WRK_BUTTON',-1);
+loadGrouplets('/cs/CSPRD/cache/PT_WORKER_MIN_1.js',5);
+ptLoadingStatus_empty(0);
+setupTimeout2();
+processing_win0(0,3000);
+ptConsole2.enable();
+}
+try{ptEvent.load(onLoadExt_win0);}catch(e){}
+</script></head>
+<body tabindex='-1' >
+<DIV id='pt_envinfo' devicetype='' Browser='OTHERS/0/WIN' ToolsRel='8.55.10' User='2015014465' DB='CSPRD/ORACLE' AppServ='//128.10.11.8:9000'></DIV>
+<DIV id='pt_pageinfo' Page='SU_STU_SF' Component='SU_STU_SF' Menu='SU_CS_MENU' Mode='%Mode'></DIV>
+<form id='SU_STU_SF' name='win0' method='post' action="http://117.55.241.168:8080/psc/CSPRD/EMPLOYEE/SA/c/SU_CS_MENU.SU_STU_SF.GBL"  autocomplete='off' class='PSForm'>
+<DIV class='ps_box-toolshiddens'  id='win0divPSTOOLSHIDDENS'><div class='ps_modalmask_cover psc_hidden' id='pt_modalMaskCover'>&nbsp;</div><div class='ps_modalmask psc_hidden' id='pt_modalMask'>&nbsp;</div><div id='pt_modals' class='ps_modal_controller'><div id='ptModalShadow' class='popupDragFrame' style='cursor:nw-resize'>&nbsp;</div></div>
+<div class='ps_ajax_console psc_hidden' id='pt_console'></div><div class='ps_typeahead psc_hidden' id='pt_typeahead0'><div id='pt_typeahead' class='ps_box-typeahead'>&nbsp;</div></div><div class='ps_box-announce ps_alert-normal' aria-live='polite' aria-hidden='true' id='pt_liveregion'></div>
+<div class='ps_box-group psc_layout psc_skipnav_container psc_hidden' id='PT_SKIPNAV_CONT'>
+<div class='ps_box-link psc_skipnav'><span class='ps-link-wrapper'><a class='ps-link' id='PT_SKIPNAV' onclick='javascript:cancelBubble(event);' href='javascript:SetMainConentFocus();' onblur='javascript:SetMainConentFocus(false);'>Skip to Main Content</a></span></div>
+</div>
+<div class='psc_processing psc_hidden' id='WAIT_win0'><img id='processing'  src='/cs/CSPRD/cache/PT_PROCESSING_FMODE_1.gif' alt='Processing... please wait' title='Processing... please wait' /></div>
+ <div style='visibility:hidden; display:none; position:absolute;left:-10000px;top:auto; width:1px; height:1px;overflow:hidden;' aria-relevant='text additions' aria-live='assertive' aria-atomic='true' class='psc_processing psc_hidden' id='Delayed_win0'>&nbsp;</div><div class='psc_saved psc_hidden' id='SAVED_win0' ><div><div id='saveWait_win0' ><img src='/cs/CSPRD/cache/PT_LOADER_1.gif' width='24' height='24' alt=''/></div><div class='ps_saved_text'><span id='ptStatusText_win0'>&nbsp;</span></div></div></div><DIV class='x'  id='win0divPSHIDDENFIELDS' style='display:none'><input type='hidden' name='ICType' id='ICType' value='Panel' />
+<input type='hidden' name='ICElementNum' id='ICElementNum' value='0' />
+<input type='hidden' name='ICStateNum' id='ICStateNum' value='1' />
+<input type='hidden' name='ICAction' id='ICAction' value='None' />
+<input type='hidden' name='ICXPos' id='ICXPos' value='0' />
+<input type='hidden' name='ICYPos' id='ICYPos' value='0' />
+<input type='hidden' name='ResponsetoDiffFrame' id='ResponsetoDiffFrame' value='-1' />
+<input type='hidden' name='TargetFrameName' id='TargetFrameName' value='None' />
+<input type='hidden' name='FacetPath' id='FacetPath' value='None' />
+<input type='hidden' name='ICFocus' id='ICFocus' value='' />
+<input type='hidden' name='ICSaveWarningFilter' id='ICSaveWarningFilter' value='0' />
+<input type='hidden' name='ICChanged' id='ICChanged' value='0' />
+<input type='hidden' name='ICAutoSave' id='ICAutoSave' value='0' />
+<input type='hidden' name='ICResubmit' id='ICResubmit' value='0' />
+<input type='hidden' name='ICSID' id='ICSID' value='REx6EXWjrcyfnes3YorwEIrggEpRjj2YYOaDWzb1fOg=' />
+<input type='hidden' name='ICActionPrompt' id='ICActionPrompt' value='false' />
+<input type='hidden' name='ICTypeAheadID' id='ICTypeAheadID' value='' />
+<input type='hidden' name='ICBcDomData' id='ICBcDomData' value='' />
+<input type='hidden' name='ICDNDSrc' id='ICDNDSrc' value='' />
+<input type='hidden' name='ICPanelHelpUrl' id='ICPanelHelpUrl' value='' />
+<input type='hidden' name='ICPanelName' id='ICPanelName' value='' />
+<input type='hidden' name='ICPanelControlStyle' id='ICPanelControlStyle' value='' />
+<input type='hidden' name='ICFind' id='ICFind' value='' />
+<input type='hidden' name='ICAddCount' id='ICAddCount' value='' />
+<input type='hidden' name='ICAPPCLSDATA' id='ICAPPCLSDATA' value='' />
+</DIV>
+</DIV>
+<a class='ps-anchor' id='ICFirstAnchor_win0'></a>
+<DIV id='PT_WRAPPER' class='ps_wrapper'>
+<DIV class='ps_header' id='PT_HEADER' >
+<DIV class='ps_header_panel' id='PT_HEADER_PANEL'>
+<DIV class='ps_pspagecontainer_hdr' id='win0divPSPAGECONTAINER_HDR'>
+<div      class='ps_box-group psc_layout' id='win0hdrdivPTLAYOUT_HEADER_GROUPBOX0'><div     role="banner"  class=' ps_header_bar' id='win0hdrdivPTLAYOUT_HEADER_GROUPBOX1'><div      class=' ps_back_cont' id='win0hdrdivPT_NAV_CONT'><div      class=' ps_system_cont' id='win0hdrdivPTLAYOUT_HEADER_GROUPBOX4'><DIV    class='ps_box-button ps_button_backnav psc_toolaction-back psc_header-all' id='win0hdrdivPT_WORK_PT_BUTTON_BACK'><span  class='ps-button-wrapper' title='Back' ><a id='PT_WORK_PT_BUTTON_BACK'  class='ps-button'   role='button' role='button' role='button' href="javascript:DoBack('win0')" onclick='javascript:cancelBubble(event);' ><img src='/cs/CSPRD/cache/PT_NUI_BACK_PRIM_IMG_1.svg' name='PT_WORK_PT_BUTTON_BACK$IMG' class='ps-img'  alt=''/><span class='ps-text'>Back</span></a></span>
+</DIV><div      class='ps_box-group psc_layout' id='win0hdrdiv$ICField69'></div></div><div      class=' ps_custom_cont' id='win0hdrdivPT_CUSTOM_LEFT'></div></div><div      class=' ps_pagetitle_cont' id='win0hdrdivPT_TITLE_CONT'><div     class=' ps_system_cont' id='win0hdrdivPT_PAGETITLE'><h1 id ='PT_PAGETITLE' class='ps_pagetitle' ><span class='ps-text' id='PT_PAGETITLElbl'>Student Ledger</span></h1></div><div      class=' ps_custom_cont' id='win0hdrdivPT_CUSTOM_MIDDLE'></div></div><div      class=' ps_actions_cont' id='win0hdrdivPT_ACTION_CONT'><div      class=' ps_custom_cont ' id='win0hdrdivPT_CUSTOM_RIGHT'></div><div      class=' ps_system_cont' id='win0hdrdivPTLAYOUT_HEADER_GROUPBOX6'><div      class='ps_box-group psc_layout ps_header_button ps_search-custom psc_hide-BP3' id='win0hdrdivPT_CUSTOM_SEARCH'></div><div      class=' ps_header_button psc_header-all' id='win0hdrdiv$ICField54'><div      class='ps_box-group psc_has_popup ps_box-button  psc_menu-act  ps_header_button psc_header-all psc_image_only' id='win0hdrdivPT_ACTION_MENU'><span class='ps-button-wrapper' title="Actions List"><a class='ps-button' role='button' id='PT_ACTION_MENU$PIMG' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'PT_ACTION_MENU');"><span class='ps-text'>Actions List</span><img class='ps-img' src='/cs/CSPRD/cache/PT_HEADER_ACTIONS_1.svg' alt=''></a></span><div class='psc_hidden' options='sPopupParentId@PT_ACTION_MENU$PIMG;bPIA@1;bPopup@1;bMask@0;bClose@1;bHeader@1;bCache@1;sStyle@ps_popup-menu ps_menutype-act;sTitle@Actions List Popup;bAutoClose@1;bMask@1;sMaskStyle@ps_masktrans;bVertical@1;bHeader@0;' id='PT_ACTION_MENU$divpop'><div class='ps_content-group' id='win0hdrdivPT_ACTION_MENUgrp' onscroll='doScroll(this, false);'>
+<ul      class='ps_box-group ps_menucontainer' id='win0hdrdiv$ICField13'><li     role="presentation"  class=' ps_custom_action ps_menusection ' id='win0hdrdivPT_CUSTOM_ACTION'></li><li     role="presentation"  class='  ps_search_action ps_menusection ' id='win0hdrdivPT_SEARCH_ACTION'></li><li     role="presentation"  class=' ps_ag_action ps_menusection ' id='win0hdrdivPT_ACTGUIDE_ACTION'></li><li     role="presentation"  class='ps_box-group psc_layout ps_system_action ps_menusection' id='win0hdrdivPT_SYSTEM_ACTION'><ul     role="presentation"  class='ps_box-group psc_layout' id='win0hdrdivPT_SYSACT_CONT'><li     role="listitem"  class='ps_box-group psc_layout ps_header-previous ps_menuitem psc_hidden' id='win0hdrdivPT_SYSACT_PRVLST'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-next ps_menuitem  psc_hidden' id='win0hdrdivPT_SYSACT_NXTLST'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-retlist ps_menuitem psc_hidden' id='win0hdrdivPT_SYSACT_RETLST'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-home ps_menuitem psc_show-BP2' id='win0hdrdivPT_SYSACT_HOME'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-gsearch ps_menuitem psc_show-BP3' id='win0hdrdivPT_SYSACT_GBLSRCH'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-addhp ps_menuitem' id='win0hdrdivPT_SYSACT_ADDHP'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-addnb ps_menuitem' id='win0hdrdivPT_SYSACT_ADDNB'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-addfav ps_menuitem' id='win0hdrdivPT_SYSACT_ADDFAV'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-navbar ps_menuitem psc_show-BP4' id='win0hdrdivPT_SYSACT_NAVBAR'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-mcfconsole ps_menuitem' id='win0hdrdivPT_SYSACT_MCF'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-mypref ps_menuitem' id='win0hdrdivPT_SYSACT_MYPREF'></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-help ps_menuitem' id='win0hdrdivPT_SYSACT_HELP'><DIV    class='ps_box-link psc_toolaction-help' id='win0hdrdivPT_HELP_MENU'><span id='PT_HELP_MENU$span'  class='ps-link-wrapper'><a id='PT_HELP_MENU'  class='ps-link'   ptlinktgt='pt_replace' href="javascript:DoHelp('PeopleSoft Online Help')" onclick='javascript:cancelBubble(event);'  >Help</a></span>
+</DIV></li><li     role="listitem"  class='ps_box-group psc_layout ps_header-logout ps_menuitem' id='win0hdrdivPT_SYSACT_LOGOUT'></li></ul></li></ul></div></div></div></div></div></div></div><div      class='ps_box-group psc_layout ps_header_confirmation' id='win0hdrdivPT_CONFIRM_CONT'><div     role="alert" aria-live="assertive"  class='ps_box-group psc_layout psc_confirmation-animate ' id='win0hdrdivPT_CONFIRMATION'><div      class='ps_box-group psc_layout psc_confirmation-area' id='win0hdrdivPT_CONFIRM_AREA'><DIV    class='ps_box-longedit psc_disabled psc_wrappable psc_has_value psc_confirmation-msg' id='win0hdrdivPT_CONFIRM_MSG'><DIV   class='ps_box-label' id='win0hdrdivPT_CONFIRM_MSGlbl'><span  class='ps-label'>&nbsp;</span> </DIV><span class='ps_box-value'    aria-disabled='true'id='PT_CONFIRM_MSG'>&nbsp;</span>
+</DIV><DIV    class='ps_box-button psc_image_only psc_modal-close psc_confirmation-close' id='win0hdrdivPT_CONFIRM_CLOSE'><span  class='ps-button-wrapper' title='Close' ><a id='PT_CONFIRM_CLOSE'  class='ps-button'   role='button' role='button' role='button' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'PT_CONFIRM_CLOSE');"><img src='/cs/CSPRD/cache/PT_MODAL_CLOSE_NUI_1.svg' name='PT_CONFIRM_CLOSE$IMG' class='ps-img'  alt='Close'/></a></span>
+</DIV></div></div></div><div      class='ps_box-group psc_layout ps_ag-processheader' id='win0hdrdivPT_AG_LAYOUT_PT_AG_GROUPBOX3'></div><div      class=' ps_header_bar_custom' id='win0hdrdivPT_CUSTOM_BOTTOM'></div></div></DIV></DIV>
+
+</DIV>
+<DIV class='ps_search psc_close' id='PT_SEARCH' ></DIV>
+<DIV class='ps_box-pagetabs' id='win0divPSPANELTABS'><ul class='ps_tabs' role='tablist' id='pagetab'><li class='ps_tab  psc_selected ' role='presentation' id='win0divpagetab_0'><a class='ps_tab-link' onkeydown="return doTabNav(event);" role='tab' aria-selected='true' tabindex='0' id='pagetab_0'>Student Ledger</a></li></ul></DIV>
+
+<DIV class='ps_mid_section' id='PT_MID_SECTION'>
+<DIV class='pst_panel-side1' id='PT_SIDE' ><DIV class='pst_panel-side1-top' id='PT_SIDE_TOP' ></DIV><DIV class='pst_panel-side1-bottom' id='PT_SIDE_BOTTOM' ></DIV></DIV>
+
+<DIV class='ps_content' id='PT_CONTENT' role='main'>
+<DIV class='ps_main' id='PT_MAIN'><DIV class='ps_pagecontainer' id='win0divPAGECONTAINER'>
+<DIV class='ps_pspagecontainer' id='win0divPSPAGECONTAINER'>
+<div  onscroll='doScroll(this, false);'     class='ps_box-group psc_layout' id='win0divSU_STU_SF_WRK_'><div      class='ps_box-group' id='win0divSU_STU_SF_WRK_GROUPBOX'><h2 class='ps_header-group'><span class='ps-text' id='SU_STU_SF_WRK_GROUPBOXlbl'>Overall Summary</span></h2>
+<div class='ps_content-group' id='win0divSU_STU_SF_WRK_GROUPBOXgrp'>
+<DIV    class='ps_box-edit psc_disabled psc_has_value' id='win0divSU_STU_SF_WRK_DESCR_STDNT_GROUP'><DIV   class='ps_box-label' id='win0divSU_STU_SF_WRK_DESCR_STDNT_GROUPlbl'><span  class='ps-label'>Total Charges</span> </DIV><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_WRK_DESCR_STDNT_GROUP'>22914.59</span>
+</DIV><DIV    class='ps_box-edit psc_disabled psc_has_value' id='win0divSU_STU_SF_WRK_DESCR_TERM'><DIV   class='ps_box-label' id='win0divSU_STU_SF_WRK_DESCR_TERMlbl'><span  class='ps-label'>Total Payment</span> </DIV><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_WRK_DESCR_TERM'>-25119.59</span>
+</DIV><DIV    class='ps_box-edit psc_disabled psc_has_value' id='win0divSU_STU_SF_WRK_DESCR_TO'><DIV   class='ps_box-label' id='win0divSU_STU_SF_WRK_DESCR_TOlbl'><span  class='ps-label'>Net Balance</span> </DIV><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_WRK_DESCR_TO'>-2205</span>
+</DIV></div></div><DIV    class='ps_box-link  psc_label-hide psc_margin-bottom0_1em psc_bold' id='win0divSU_STU_SF_WRK_BUTTON'><span id='SU_STU_SF_WRK_BUTTON$span'  class='ps-link-wrapper' title='Button Functions' ><a id='SU_STU_SF_WRK_BUTTON'  class='ps-link'   ptlinktgt='pt_peoplecode' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'SU_STU_SF_WRK_BUTTON');" >Print Payment Receipt</a></span>
+</DIV><DIV    id='win0divSU_STU_SF_WRK_FROM_DT' class='ps_box-edit psc_icon psc_date'><DIV  id='win0divSU_STU_SF_WRK_FROM_DTlbl' class='ps_box-label'><label for='SU_STU_SF_WRK_FROM_DT' id='SU_STU_SF_WRK_FROM_DT_LBL' class='ps-label'>From Date</label>
+</DIV><DIV  id='win0divSU_STU_SF_WRK_FROM_DTctrl' class='ps_box-control'><input type='text' id='SU_STU_SF_WRK_FROM_DT' class='ps-edit'   value="01/04/2017" maxlength='10' onclick='javascript:cancelBubble(event);' onchange="addchg_win0(this);oChange_win0=this;" onkeyup="if (isPromptKey(event))DatePrompt_win0('SU_STU_SF_WRK_FROM_DT','SU_STU_SF_WRK_FROM_DT','450',true);return false;" title="From Date" /><span class='ps-icon-wrapper'><a class='ps_icon-date' id='SU_STU_SF_WRK_FROM_DT$prompt'  role='button' onfocus='doFocus_win0(this,true,false);' onclick='javascript:cancelBubble(event);' href="javascript:DatePrompt_win0('SU_STU_SF_WRK_FROM_DT','SU_STU_SF_WRK_FROM_DT$prompt','450',true);"><img src="/cs/CSPRD/cache/PT_CALENDAR_1.gif" alt='Calendar From Date' title='Calendar From Date (Alt+5)'/></a></span>
+</DIV></DIV><DIV    id='win0divSU_STU_SF_WRK_TO_DT' class='ps_box-edit psc_icon psc_date'><DIV  id='win0divSU_STU_SF_WRK_TO_DTlbl' class='ps_box-label'><label for='SU_STU_SF_WRK_TO_DT' id='SU_STU_SF_WRK_TO_DT_LBL' class='ps-label'>To Date</label>
+</DIV><DIV  id='win0divSU_STU_SF_WRK_TO_DTctrl' class='ps_box-control'><input type='text' id='SU_STU_SF_WRK_TO_DT' class='ps-edit'   value="21/02/2018" maxlength='10' onclick='javascript:cancelBubble(event);' onchange="addchg_win0(this);oChange_win0=this;" onkeyup="if (isPromptKey(event))DatePrompt_win0('SU_STU_SF_WRK_TO_DT','SU_STU_SF_WRK_TO_DT','450',true);return false;" title="To Date" /><span class='ps-icon-wrapper'><a class='ps_icon-date' id='SU_STU_SF_WRK_TO_DT$prompt'  role='button' onfocus='doFocus_win0(this,true,false);' onclick='javascript:cancelBubble(event);' href="javascript:DatePrompt_win0('SU_STU_SF_WRK_TO_DT','SU_STU_SF_WRK_TO_DT$prompt','450',true);"><img src="/cs/CSPRD/cache/PT_CALENDAR_1.gif" alt='Calendar To Date' title='Calendar To Date (Alt+5)'/></a></span>
+</DIV></DIV><DIV    class='ps_box-edit psc_disabled psc_has_value' id='win0divSU_STU_SF_WRK_DESCR_MOVE_APS'><DIV   class='ps_box-label' id='win0divSU_STU_SF_WRK_DESCR_MOVE_APSlbl'><span  class='ps-label'>Opening balance</span> </DIV><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_WRK_DESCR_MOVE_APS'>-2180</span>
+</DIV><h2 class='PSLEVEL1GRIDLABEL' >Student Account Information</h2>
+<table cellspacing='0' class='PSLEVEL1GRIDWBO'  id='SU_STU_SF$scroll$0' dir='ltr' cols='1' width='784' cellpadding='0'>
+<tr><td>
+<table border='1' cellspacing='0' title="Student Account Information" dir='ltr' cellpadding='2' class='PSLEVEL1GRID' cols='7' width='784'>
+<tr>
+<th id='SU_STU_SF_ITEM_TERM' scope='col' abbr='Term' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SU_STU_SF$srt2$0' id='SU_STU_SF$srt2$0'href="javascript:submitAction_win0(document.win0,'SU_STU_SF$srt2$0');" title="Click to sort ascending">Term</a></th>
+<th id='SU_STU_SF_ITEM_EFFECTIVE_DT' scope='col' abbr='Date' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SU_STU_SF$srt3$0' id='SU_STU_SF$srt3$0'href="javascript:submitAction_win0(document.win0,'SU_STU_SF$srt3$0');" title="Click to sort ascending">Date</a></th>
+<th id='ITEM_TYPE_TBL_DESCR' scope='col' abbr='Fee Head' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SU_STU_SF$srt5$0' id='SU_STU_SF$srt5$0'href="javascript:submitAction_win0(document.win0,'SU_STU_SF$srt5$0');" title="Click to sort ascending">Fee Head</a></th>
+<th id='SU_STU_SF_ITEM_AMT' scope='col' abbr='Charges' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SU_STU_SF$srt6$0' id='SU_STU_SF$srt6$0'href="javascript:submitAction_win0(document.win0,'SU_STU_SF$srt6$0');" title="Click to sort ascending">Charges</a></th>
+<th id='SU_STU_SF_AMOUNT' scope='col' abbr='Payment' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SU_STU_SF$srt7$0' id='SU_STU_SF$srt7$0'href="javascript:submitAction_win0(document.win0,'SU_STU_SF$srt7$0');" title="Click to sort ascending">Payment</a></th>
+<th id='SU_STU_SF_AMOUNT_1' scope='col' abbr='Waiver/Scholarship' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SU_STU_SF$srt8$0' id='SU_STU_SF$srt8$0'href="javascript:submitAction_win0(document.win0,'SU_STU_SF$srt8$0');" title="Click to sort ascending">Waiver/Scholarship</a></th>
+<th id='SU_STU_SF_AMOUNT_2' scope='col' abbr='Balance' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SU_STU_SF$srt9$0' id='SU_STU_SF$srt9$0'href="javascript:submitAction_win0(document.win0,'SU_STU_SF$srt9$0');" title="Click to sort ascending">Balance</a></th>
+</tr>
+<tr id='trSU_STU_SF$0_row1' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSU_STU_SF$0_row1');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSU_STU_SF$0_row1');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSU_STU_SF$0_row1');">
+<td align='left'  height='14' class='PSLEVEL1GRIDODDROW PSGRIDFIRSTCOLUMN' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value' id='win0divSU_STU_SF_ITEM_TERM$0'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_TERM$0'>1701</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value psc_date' id='win0divSU_STU_SF_ITEM_EFFECTIVE_DT$0'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_EFFECTIVE_DT$0'>04/07/2017</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value' id='win0divITEM_TYPE_TBL_DESCR$0'><span class='ps_box-value'    aria-disabled='true'id='ITEM_TYPE_TBL_DESCR$0'>Registration Fee</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_ITEM_AMT$0'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_AMT$0'>250.00</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT$0'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT$0'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_1$0'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_1$0'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_2$0'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_2$0'>-1930.000</span>
+</DIV></td>
+</tr>
+<tr id='trSU_STU_SF$0_row2' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSU_STU_SF$0_row2');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSU_STU_SF$0_row2');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSU_STU_SF$0_row2');">
+<td align='left'  height='14' class='PSLEVEL1GRIDEVENROW PSGRIDFIRSTCOLUMN' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value' id='win0divSU_STU_SF_ITEM_TERM$1'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_TERM$1'>1701</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value psc_date' id='win0divSU_STU_SF_ITEM_EFFECTIVE_DT$1'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_EFFECTIVE_DT$1'>04/07/2017</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value' id='win0divITEM_TYPE_TBL_DESCR$1'><span class='ps_box-value'    aria-disabled='true'id='ITEM_TYPE_TBL_DESCR$1'>Tuition Fee</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_ITEM_AMT$1'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_AMT$1'>3600.00</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT$1'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT$1'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_1$1'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_1$1'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_2$1'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_2$1'>1670.000</span>
+</DIV></td>
+</tr>
+<tr id='trSU_STU_SF$0_row3' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSU_STU_SF$0_row3');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSU_STU_SF$0_row3');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSU_STU_SF$0_row3');">
+<td align='left'  height='14' class='PSLEVEL1GRIDODDROW PSGRIDFIRSTCOLUMN' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value' id='win0divSU_STU_SF_ITEM_TERM$2'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_TERM$2'>1701</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value psc_date' id='win0divSU_STU_SF_ITEM_EFFECTIVE_DT$2'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_EFFECTIVE_DT$2'>08/08/2017</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value' id='win0divITEM_TYPE_TBL_DESCR$2'><span class='ps_box-value'    aria-disabled='true'id='ITEM_TYPE_TBL_DESCR$2'>Mess Fee</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_ITEM_AMT$2'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_AMT$2'>1200.00</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT$2'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT$2'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_1$2'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_1$2'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_2$2'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_2$2'>2870.000</span>
+</DIV></td>
+</tr>
+<tr id='trSU_STU_SF$0_row4' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSU_STU_SF$0_row4');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSU_STU_SF$0_row4');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSU_STU_SF$0_row4');">
+<td align='left'  height='14' class='PSLEVEL1GRIDEVENROW PSGRIDFIRSTCOLUMN' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value' id='win0divSU_STU_SF_ITEM_TERM$3'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_TERM$3'>1701</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value psc_date' id='win0divSU_STU_SF_ITEM_EFFECTIVE_DT$3'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_EFFECTIVE_DT$3'>08/08/2017</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value' id='win0divITEM_TYPE_TBL_DESCR$3'><span class='ps_box-value'    aria-disabled='true'id='ITEM_TYPE_TBL_DESCR$3'>Hostel Fee</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_ITEM_AMT$3'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_AMT$3'>2400.00</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT$3'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT$3'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_1$3'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_1$3'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_2$3'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_2$3'>5270.000</span>
+</DIV></td>
+</tr>
+<tr id='trSU_STU_SF$0_row5' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSU_STU_SF$0_row5');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSU_STU_SF$0_row5');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSU_STU_SF$0_row5');">
+<td align='left'  height='14' class='PSLEVEL1GRIDODDROW PSGRIDFIRSTCOLUMN' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value' id='win0divSU_STU_SF_ITEM_TERM$4'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_TERM$4'>1701</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value psc_date' id='win0divSU_STU_SF_ITEM_EFFECTIVE_DT$4'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_EFFECTIVE_DT$4'>11/08/2017</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value' id='win0divITEM_TYPE_TBL_DESCR$4'><span class='ps_box-value'    aria-disabled='true'id='ITEM_TYPE_TBL_DESCR$4'>Payment Received</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_ITEM_AMT$4'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_AMT$4'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT$4'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT$4'>-5065.000</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_1$4'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_1$4'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_2$4'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_2$4'>205.000</span>
+</DIV></td>
+</tr>
+<tr id='trSU_STU_SF$0_row6' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSU_STU_SF$0_row6');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSU_STU_SF$0_row6');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSU_STU_SF$0_row6');">
+<td align='left'  height='14' class='PSLEVEL1GRIDEVENROW PSGRIDFIRSTCOLUMN' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value' id='win0divSU_STU_SF_ITEM_TERM$5'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_TERM$5'>1701</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value psc_date' id='win0divSU_STU_SF_ITEM_EFFECTIVE_DT$5'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_EFFECTIVE_DT$5'>11/08/2017</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value' id='win0divITEM_TYPE_TBL_DESCR$5'><span class='ps_box-value'    aria-disabled='true'id='ITEM_TYPE_TBL_DESCR$5'>Payment Received</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_ITEM_AMT$5'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_AMT$5'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT$5'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT$5'>-250.000</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_1$5'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_1$5'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_2$5'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_2$5'>-45.000</span>
+</DIV></td>
+</tr>
+<tr id='trSU_STU_SF$0_row7' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSU_STU_SF$0_row7');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSU_STU_SF$0_row7');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSU_STU_SF$0_row7');">
+<td align='left'  height='14' class='PSLEVEL1GRIDODDROW PSGRIDFIRSTCOLUMN' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value' id='win0divSU_STU_SF_ITEM_TERM$6'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_TERM$6'>1701</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value psc_date' id='win0divSU_STU_SF_ITEM_EFFECTIVE_DT$6'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_EFFECTIVE_DT$6'>03/10/2017</span>
+</DIV></td>
+<td align='left' >
+<DIV    class='ps_box-edit psc_disabled psc_icon psc_label-suppressed psc_has_value' id='win0divITEM_TYPE_TBL_DESCR$6'><span class='ps_box-value'    aria-disabled='true'id='ITEM_TYPE_TBL_DESCR$6'>Scholarship</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_ITEM_AMT$6'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_ITEM_AMT$6'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT$6'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT$6'>&nbsp;</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_1$6'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_1$6'>-2160.000</span>
+</DIV></td>
+<td align='right' >
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_num' id='win0divSU_STU_SF_AMOUNT_2$6'><span class='ps_box-value'    aria-disabled='true'id='SU_STU_SF_AMOUNT_2$6'>-2205.000</span>
+</DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</div></DIV></DIV>
+</DIV>
+
+</DIV >
+<DIV class='pst_panel-side2' id='PT_SIDE2' ><DIV class='ps_pspagecontainer_side2' id='win0divPSPAGECONTAINER_SIDE2'>
+<div     aria-expanded='false'  class='pst_panel-control  psc_page-container' id='win0side2divPT_WORK_PT_SIDE2PAGE_BTN'><div class='pst_panel-tabcontainer' id='win0side2divPT_WORK_PT_SIDE2PAGE_BTN$tab'><div class='ps_box-button pst_panel-button psc_image_only'><span class='ps-button-wrapper' title="Supplementary Panel"><a class='ps-button' role='button' id='PT_WORK_PT_SIDE2PAGE_BTN$PIMG' onclick='javascript:cancelBubble(event);' href="javascript:toggleSideTab('PT_WORK_PT_SIDE2PAGE_BTN$PIMG',2);"><span class='ps-text'>Supplementary Panel</span><img class='ps-img' src='/cs/CSPRD/cache/PT_RC_PANELBUTTON_ICON_1.svg' alt=''></a></span></div></div><div class='pst_panel-content psc_close' id='win0side2divPT_WORK_PT_SIDE2PAGE_BTN$content'>
+<div      class='ps_box-group psc_layout psc_page-container' id='win0side2divPTLAYOUT_SIDE_GROUPBOX6'><div      class='ps_box-group psc_layout' id='win0side2divPTLAYOUT_SIDE_GROUPBOX1'><div      class='ps_box-group psc_layout ps_collection ps_button_bar psc_distribute psc_grouped_fitted psc_rf-selector' id='win0side2divPTLAYOUT_SIDE_GROUPBOX5'><DIV    class='ps_box-radio' id='win0side2divPT_RCSEL_RC'><DIV   class='ps_box-label' id='win0side2divPT_RCSEL_RClbl'><label for='PT_RCSEL_RC' id='PT_RCSEL_RC_LBL' class='ps-label' title='Related Information'>Related Information</label>
+</DIV><DIV   class='ps_box-control' id='win0side2divPT_RCSEL_RCctrl'><input type='radio' name='PT_RCSEL_RC' id='PT_RCSEL_RC' class='ps-radio'   onfocus='this.parentElement.parentElement.classList.add("psc_focus"); doFocus_win0(this,false,true);' onblur='this.parentElement.parentElement.classList.remove("psc_focus");' value="R" onclick="setupTimeout2();addchg_win0(this);submitAction_win0(this.form,this.id);"  PSnchg='0' /></DIV>
+</DIV><DIV    class='ps_box-radio psc_selected ' id='win0side2divPT_RCSEL_ANALYTICS'><DIV   class='ps_box-label' id='win0side2divPT_RCSEL_ANALYTICSlbl'><label for='PT_RCSEL_ANALYTICS' id='PT_RCSEL_ANALYTICS_LBL' class='ps-label' title='My Analytics'>My Analytics</label>
+</DIV><DIV   class='ps_box-control' id='win0side2divPT_RCSEL_ANALYTICSctrl'><input type='radio' name='PT_RCSEL_RC' id='PT_RCSEL_ANALYTICS' class='ps-radio'   aria-selected='true' onfocus='this.parentElement.parentElement.classList.add("psc_focus"); doFocus_win0(this,false,true);' onblur='this.parentElement.parentElement.classList.remove("psc_focus");' value="A" checked='checked' onclick="setupTimeout2();addchg_win0(this);submitAction_win0(this.form,this.id);"  PSnchg='0' /></DIV>
+</DIV></div></div><div      class='ps_box-group ps_panel_content psc_padding-05em psc_padding-topnone' id='win0side2divPTLAYOUT_SIDE_GROUPBOX2'><div      class='ps_box-group' id='win0side2divPT_SIDE2_ANALITICS'><div      class='ps_box-group psc_layout' id='win0side2div$ICField1'><div      class='ps_box-group psc_layout' id='win0side2div$ICField18'></div><div      class='ps_box-group psc_layout' id='win0side2div$ICField19'><DIV    class='ps_box-grid-flex ptpg_reportlist ' id='win0side2divPTPG_PUBPG_DVW$0'><DIV    class='ps_box-grid-header' id='win0side2divPTPG_PUBPG_DVWhdr$0'><div class='ps_box-grid-title'><h2 class='ps_grid-title'><span class='ps-text'>My Analytics</span></h2>
+</div><div class='ps_box-grid-header_bar'><div class='ps_header-grid-custom'></div></div></DIV><DIV    class='ps_box-gridc' id='win0side2divPTPG_PUBPG_DVWgridc$0'><DIV    class='ps_box-gridc-right' id='win0side2divPTPG_PUBPG_DVWgridc-right$0'><DIV    class='ps_box-grid' id='win0side2divPTPG_PUBPG_DVW$grid$0'><table class='ps_grid-flex'><thead class='ps_grid-head'><tr class='ps_grid-head-row'>
+<th scope='col' class='ps_grid-col PTPGREPORTNAME'><div class='ps_box_grid-col'><DIV    class='ps_grid-col-label' id='win0side2divPTPGREPORTNAMElblhdr$0'>No analytics available</DIV></div></th><th scope='col' class='ps_grid-col'><div class='ps_box_grid-col'><DIV    class='ps_grid-col-label' id='win0side2divPTPG_PUBPG_DVW_PTPG_SRCCOMPlblhdr$0'>Created From</DIV></div></th></tr></thead>
+<tbody class='ps_grid-body'><tr class='ps_grid-row' id='PTPG_PUBPG_DVW$0_row_0' >
+<td class='ps_grid-cell PTPGREPORTNAME'>
+<DIV    class='ps_box-link psc_disabled' id='win0side2divPTPGREPORTNAME$0'><span id='PTPGREPORTNAME$span$0'  class='ps-link-wrapper' title='Description' ><a id='PTPGREPORTNAME$0' disabled='disabled'  class='ps-link'   aria-disabled='true' ptlinktgt='pt_peoplecode' >No analytics available</a></span>
+</DIV></td>
+<td class='ps_grid-cell'>
+<DIV    class='ps_box-edit psc_disabled psc_label-suppressed psc_has_value' id='win0side2divPTPG_PUBPG_DVW_PTPG_SRCCOMP$0'><span class='ps_box-value'    aria-disabled='true'id='PTPG_PUBPG_DVW_PTPG_SRCCOMP$0'>&nbsp;</span>
+</DIV></td>
+</tr>
+</tbody></table>
+</DIV></DIV></DIV></DIV></div></div></div><div      class='ps_box-group' id='win0side2divPT_SIDE2_RC'><h3 class='ps_header-group'><span class='ps-text' id='PT_SIDE2_RClbl'>Related Information</span></h3>
+<div class='ps_content-group' id='win0side2divPT_SIDE2_RCgrp'>
+<div      class='ps_box-group psc_layout' id='win0side2divPTLAYOUT_SIDE_GROUPBOX7'><DIV    class='ps_box-button psc_image_only psc_transparent' id='win0side2divPTCS_RCPERS_WRK_PTCS_CMPLVL_PERS'><span  class='ps-button-wrapper' title='Personalize RC' ><a id='PTCS_RCPERS_WRK_PTCS_CMPLVL_PERS'  class='ps-button'   role='button' role='button' role='button' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'PTCS_RCPERS_WRK_PTCS_CMPLVL_PERS');"><img src='/cs/CSPRD/cache/PTPG_NUI_OPTIONS_1.svg' name='PTCS_RCPERS_WRK_PTCS_CMPLVL_PERS$IMG' class='ps-img'  alt='Personalize RC'/></a></span>
+</DIV></div><div      class='ps_box-group' id='win0side2div$ICField11'><div      class='ps_box-group psc_layout' id='win0side2div$ICField$2$'><div    class='ps_box-scrollarea' id='win0side2div$ICField2$0'><div    class='ps_box-scrollarea-row' id='win0side2div$ICField2_row$0'><div      class='ps_box-group psc_collapsible pst_rc-general' id='win0side2divPTCS_FLRTFR_DVW_PTCS_GROUPLET$0'><DIV    class='ps_box-button psc_image_only psc_hidden' id='win0side2divPTCS_FLRTFR_DVW_PTCS_GROUPLET$16$$0'><span  class='ps-button-wrapper' title='Grouplet' ><a id='PTCS_FLRTFR_DVW_PTCS_GROUPLET$16$$0'  class='ps-button'   role='button' role='button' role='button' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'PTCS_FLRTFR_DVW_PTCS_GROUPLET$16$$0');"><img src='/cs/CSPRD/cache/PT_MODAL_CNTRL_1.gif' name='PTCS_FLRTFR_DVW_PTCS_GROUPLET$16$$IMG$0' class='ps-img' /></a></span>
+</DIV></div></div></div></div></div></div></div></div></div></div></div></DIV></DIV>
+
+</DIV><DIV class='ps_footer' id='PT_FOOTER' ></DIV>
+<div id='DetachDiv' height=0 width=0 frameborder=0></div>
+</DIV>
+<a  class='ps-anchor' id='ICLastAnchor_win0'></a>
+</form>
+<div id='popupDragFrame' class='popupDragFrame'>&nbsp;</div>
+<!-- Mouse-over popup Begin -->
+<table id='win0MOpopupContainer' width='20' border='0' cellpadding='0' cellspacing='0' style='display:none; position:absolute; top:0; left:0;' onMouseOver="MOpopupObj_win0.StartPopup('win0MOpopupContainer', '');" onMouseOut="MOpopupObj_win0.StopPopup();"><tr>
+<td id='win0MOpopupInner' height='25' width='20' align='left' valign='top' class='MOBGImage'>
+<div id='win0MOdivpopupFrame' tabindex='-1' onclick='MOpopupObj_win0.SetFocusFlag(false);' style='overflow:auto; width:20px; height: 60px; padding:8px; box-shadow:0 0 5px #000000; background-color:white; border: 1px solid #666666;'>test</div></td>
+</tr>
+</table>
+<!-- Mouse-over popup End  -->
+</body>
+<script language='JavaScript'>
+setPSTouchHandlerDoc();var nMaxSavedStates=5;
+bSearchDialog_empty =false;
+var sHistURL="http://117.55.241.168:8080/psc/CSPRD/EMPLOYEE/SA/c/SU_CS_MENU.SU_STU_SF.GBL?page=SU_STU_SF&PORTALPARAM_PTCNAV=SU_STU_SF&EOPP.SCNode=SA&EOPP.SCPortal=EMPLOYEE&EOPP.SCName=ADMN_STUDENT_SELF_SERVICE&EOPP.SCLabel=&EOPP.SCPTcname=PT_PTPP_SCFNAV_BASEPAGE_SCR&FolderPath=PORTAL_ROOT_OBJECT.PORTAL_BASE_DATA.CO_NAVIGATION_COLLECTIONS.ADMN_STUDENT_SELF_SERVICE.ADMN_S201801231039094994048890&IsFolder=false";
+var bICList = false;
+var bCloseModal = false;
+var bHtml5Doc = true;
+var bClearBackState=false;
+var bPageTransfered=false;
+var bTransferAnimate=false;
+var bCleanHtml = true;
+var bDefer = true;
+document.deferFldArr_win0 = new Array();
+document.hiddenFldArr_win0 =new Array('ICType','ICElementNum','ICStateNum','ICAction','ICXPos','ICYPos','ResponsetoDiffFrame','TargetFrameName','FacetPath','ICFocus','ICSaveWarningFilter','ICChanged','ICAutoSave','ICResubmit','ICSID','ICActionPrompt','ICTypeAheadID','ICBcDomData','ICDNDSrc','ICPanelHelpUrl','ICPanelName','ICPanelControlStyle','ICFind','ICAddCount','ICAPPCLSDATA');
+document.chgFldArr_win0 = new Array();
+AddToHistory('Student Ledger', '', 'returntolastpage@0', 'SU_STU_SF', 1, 0, 0, 0,'',0, '', 0);
+var bCleanHtml = true;
+var bDefer = true;
+document.hiddenFldArr_win0 =new Array('ICType','ICElementNum','ICStateNum','ICAction','ICXPos','ICYPos','ResponsetoDiffFrame','TargetFrameName','FacetPath','ICFocus','ICSaveWarningFilter','ICChanged','ICAutoSave','ICResubmit','ICSID','ICActionPrompt','ICTypeAheadID','ICBcDomData','ICDNDSrc','ICPanelHelpUrl','ICPanelName','ICPanelControlStyle','ICFind','ICAddCount','ICAPPCLSDATA');
+document.chgFldArr_win0 = new Array();
+var bCDATA = false;
+var bAccessibleLayout = false;
+var bLoadCompleted = true;
+</script></html>
