@@ -108,7 +108,6 @@ with Browser() as Browser_tab:
             if not os.path.exists(folder):
                 os.makedirs(folder)
             for element in Documents[key]:
-                print('ok')
                 link,name=element
                 file_name = folder+"/"+name
                 r = Browser_tab.get(link, stream=True)
