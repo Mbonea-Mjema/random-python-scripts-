@@ -74,13 +74,19 @@ with Browser() as Browser_tab:
             if link1 != None:
                 File_links.append(link1('a')[0].attrs['href'])
                 
+                
         if(File_links!=[]):
             assignment_links=[]
             for link2 in File_links:
                 file=Browser_tab.get(link2)
                 if(Html_parser(file.text,"html.parser").findAll("div",{"class":"attachments"})!= []):
-                        #creating a link to the documents 
-                    assignment_links.append(Html_parser(file.text,"html.parser").findAll("div",{"class":"attachments"})[0]("a")[0].attrs["href"])
+                        #creating a link to the documents
+                    name=Html_parser(file.text,"html.parser").findAll("div",{"class":"attachments"})[0]("a")[1].text
+                    file=Html_parser(file.text,"html.parser").findAll("div",{"class":"attachments"})[0]("a")[0]
+                    
+                    #assignment_links.append(file.attrs["href"])
+                    assignment_links.append((file.attrs["href"],name))
+
             Documents[course_name[Newsforum.index(link)]]=assignment_links               
 
         else:
@@ -95,21 +101,22 @@ with Browser() as Browser_tab:
         #Progress (in percentage)
         
         percentage=int((keys.index(key)/len(keys)*100))
-
         print(str(percentage)+'%...')
         if Documents[key]!=[]:
-            folder="./files/"+key
+            folder="./files/"+key.lower()
             import os
             if not os.path.exists(folder):
                 os.makedirs(folder)
-                for link in Documents[key]:
-                    file_name = folder+"/"+link.split('/')[-1].replace("%20"," ").replace("%28"," ").replace("%29"," ")
-                    r = Browser_tab.get(link, stream=True)
-                    if not os.path.exists(file_name):
-                        with open(file_name, 'wb') as f:
-                            for chunk in r.iter_content(chunk_size=1024): 
-                                if chunk: # filter out keep-alive new chunks
-                                    f.write(chunk)
+            for element in Documents[key]:
+                print('ok')
+                link,name=element
+                file_name = folder+"/"+name
+                r = Browser_tab.get(link, stream=True)
+                if not os.path.exists(file_name):
+                    with open(file_name, 'wb') as f:
+                        for chunk in r.iter_content(chunk_size=1024): 
+                            if chunk: # filter out keep-alive new chunks
+                                f.write(chunk)
                                     
     print("done!!!!")
 
