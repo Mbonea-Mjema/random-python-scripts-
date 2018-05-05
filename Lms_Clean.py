@@ -117,10 +117,12 @@ with Browser() as Browser_tab:
                         for chunk in r.iter_content(chunk_size=1024): 
                             if chunk: # filter out keep-alive new chunks
                                 f.write(chunk)
+    
                                     
     print("done!!!!")
 
-
+import shutil
+shutil.make_archive('Lms files', 'zip', './files')
     
    
     
