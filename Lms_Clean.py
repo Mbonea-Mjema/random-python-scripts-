@@ -120,8 +120,13 @@ with Browser() as Browser_tab:
                                     
     print("done!!!!")
 
-import shutil
-shutil.make_archive('Lms files', 'zip', './files')
+import shutil,os
+files=os.listdir('./files')
+for file in files:
+	print('{}: {}'.format(files.index(file),file))
+index =int(input('choose:...'))
+folder=files[index]
+shutil.make_archive('zippy', 'zip', './files/'+folder)
     
    
     
